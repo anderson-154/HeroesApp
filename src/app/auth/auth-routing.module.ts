@@ -10,8 +10,8 @@ const routes: Routes = [
     component: LayoutPagesComponent,
     children:[
       {path:'login', component: LoginPagesComponent},
-      {path:'new-account', Component: RegisterPagesComponent},
-      {path:'**', redictTo: LoginPagesComponent}
+      {path:'new-account', component: RegisterPagesComponent},
+      {path:'**', redirectTo: 'LoginPagesComponent'}
     ]
   }
 ];

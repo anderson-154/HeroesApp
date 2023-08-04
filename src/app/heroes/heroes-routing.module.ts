@@ -10,11 +10,11 @@ const routes: Routes = [
     path:'',
     component: LayoutPageComponent,
     children: [
-      {path:'new-hero', Component: AddNewHeroPageComponent},
-      {path:'search', Component: SearchPageComponent},
-      {path:'edit/:id', Component: AddNewHeroPageComponent},
-      {path:'list', Component: ListPageComponent},
-      {path:':id', Component: ListPageComponent},
+      {path:'new-hero', component: AddNewHeroPageComponent},
+      {path:'search', component: SearchPageComponent},
+      {path:'edit/:id', component: AddNewHeroPageComponent},
+      {path:'list', component: ListPageComponent},
+      {path:':id', component: ListPageComponent},
       {path:'**', redirectTo:'list'}
     ]
   }
