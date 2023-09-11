@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class LayoutPageComponent implements OnInit {
+export class LayoutPageComponent{
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  public sidebarItems =[
+    {label: 'Listado', icon:'label',url:'./list-page'},
+    {label: 'Añadir', icon:'add',url:'./new-hero'},
+    {label: 'Buscar', icon:'search',url:'./search'}
+  ]
 }
