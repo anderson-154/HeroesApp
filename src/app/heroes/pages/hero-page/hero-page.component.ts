@@ -8,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+
+  ) { }
 
   ngOnInit(): void {
+
   }
 
 }
