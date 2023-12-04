@@ -6,14 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class HeroPageComponent implements OnInit {
+export class HeroPageComponent {
 
+  public publishers = [
+    {id: 'DC Comivs', desc: 'DC-Comics'},
+    {id: 'Marvel Comics', desc: 'Marvel-comics'}
+  ]
   constructor(
 
   ) { }
-
-  ngOnInit(): void {
-
-  }
 
 }
