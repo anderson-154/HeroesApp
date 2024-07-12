@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-pages',
@@ -6,11 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class LoginPagesComponent implements OnInit {
+export class LoginPagesComponent  {
 
-  constructor() { }
+  constructor(
+    private authService: AuthService,
+    private router: Router
+  ) { }
 
-  ngOnInit(): void {
+  onLogin(): void{
+    this.authService.login("anderson@gmail.com", "1234")
+      .subscribe(user => {
+        this.router.navigate(['/'])
+      })
   }
 
 }
